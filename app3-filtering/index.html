@@ -1,7 +1,17 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app='myApp'>
+	<body ng-controller='mainCtrl'>
+
+		<input ng-model='search'>
+
+		<ul>
+			<li ng-repeat='item in data'>
+				{{ item }}
+			</li>
+		</ul>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

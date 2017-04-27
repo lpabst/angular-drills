@@ -1,8 +1,17 @@
-<html ng-app="arrayApp">
+<html ng-app="myApp">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
+	<body ng-controller='mainCtrl'>
+
+
+		<ul>
+			<li ng-repeat='item in data'>
+		{{ item }}
+			</li></ul>
+
+
+
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
