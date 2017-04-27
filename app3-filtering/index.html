@@ -1,6 +1,17 @@
-<html>
-	<body>
-		Something
+<html ng-app='app'>
+	<body ng-controller='controller'>
+		
+		<input ng-model='filter'>
+
+		<ul>
+			<li ng-repeat='item in data | filter: filter'>
+				{{ item }}
+			</li>
+		</ul>
+
+
+
+		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

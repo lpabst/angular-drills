@@ -1,5 +1,11 @@
-<html ng-app="apiApp">
-	<body>
+<html ng-app="app">
+	<body ng-controller='controller'>
+		
+<ul>
+	<li ng-repeat='item in data'>
+		{{ item }}
+	</li>
+</ul>
 		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
