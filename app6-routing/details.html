@@ -1,0 +1,14 @@
+<h1>Details Screen</h1>
+
+<button ng-click='previous()'>Previous</button>
+<button ng-click='next()'>Next</button>
+
+<br>
+
+<div class='pokemon_div' ng-repeat='poke in pokemon' ng-click='getInfo($index)'>
+{{poke.name}}
+</div>
+
+<br>
+
+{{ info }}

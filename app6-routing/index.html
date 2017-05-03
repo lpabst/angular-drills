@@ -1,9 +1,35 @@
-<html>
+<html ng-app='app'>
+
+<head>
+	<link rel='stylesheet' href='main.css'>
+</head>
+
+
+
+
+
+
 	<body>
 		<h1>app6 - routing</h1>
+
+		<ul>
+			<li ui-sref='home'>Home</li>
+			<li ui-sref='signup'>Sign Up</li>
+			<li ui-sref='details'>Details</li>
+		</ul>
+
+
+<ui-view>
+
+</ui-view>
+
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+		<script src="detailsCtrl.js"></script>
+		<script src="pokeService.js"></script>
 	</body>
 </html>
